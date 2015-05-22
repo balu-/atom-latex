@@ -25,12 +25,15 @@
   "engines": {
     "atom": ">=0.186.0 <2.0.0"
   },
-  "consumedServices": {
+  "providedServices": {
     "build": {
+      "description": "...",
       "versions": {
-        "^0.1.0": "consumeBuildService"
+        "0.1.0": "provideBuilder"
       }
-    },
+    }
+  },
+  "consumedServices": {
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
